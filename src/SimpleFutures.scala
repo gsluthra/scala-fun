@@ -15,7 +15,6 @@ object SimpleFutures {
     val x = 9
     x + 2
 
-
     // let: A, (A => B) => B
     // bind: F[A], (A => F[B]) => F[B] (Monad)
 
