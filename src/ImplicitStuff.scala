@@ -102,6 +102,7 @@ object ImplicitStuff {
 
   object ImplicitStuff5{
 
+    // A => B
     implicit def toTapper[T](obj: T) = new Tapper(obj) //Optionally, you can comment this line, and make the class Tapper implicit
 
     class Tapper[S](val obj: S){
@@ -111,12 +112,10 @@ object ImplicitStuff {
       }
     }
 
-    case class Person(name: String, age: Int)
-
     def test() = {
       val sss = "Hello"
       sss.tap("Some tap").length()
-      new Person("GP", 34).tap("Person tapped")
+//      new Person("GP", 34).tap("Person tapped")
     }
   }
 
