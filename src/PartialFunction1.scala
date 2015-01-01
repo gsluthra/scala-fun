@@ -1,3 +1,4 @@
+// More like Partially Applied Function
 object PartialFunction1 {
 
   //(A, f(A,B)=> C) => (f(B) => C)
