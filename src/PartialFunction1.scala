@@ -14,6 +14,13 @@ object PartialFunction1 {
     functionBtoC
   }
 
+  //Because the RHS is basically supposed to be a function that goes from B -> C
+  def partial1_alternative[A,B,C](a: A, f: (A,B) => C): B => C = {
+    b:B => f(a, b)
+  }
+
+  def partial1_alternative2[A,B,C](a: A, f: (A,B) => C): (B => C) = f(a, _)
+
   def main(args: Array[String]) {
     def increment(a:Int, b: String) = {
       a + b
