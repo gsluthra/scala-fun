@@ -1,3 +1,5 @@
+package fpbook
+
 object Factorial{
 
   def main(args: Array[String]) {
@@ -19,6 +21,10 @@ object Factorial{
       if(number == 0) acc else go(number - 1, number*acc)
     }
 
+    /*
+    Note that here the accumulator is being passed to the function, so current method
+    does not need to remember any data, and can be optimized away
+     */
     go(number, 1)
   }
 

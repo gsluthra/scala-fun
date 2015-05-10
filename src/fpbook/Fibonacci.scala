@@ -1,3 +1,5 @@
+package fpbook
+
 // Tail Recursive Implementation of Fibonacci
 // Notice how the compiler optimization makes the tail recursive version run so much faster
 
