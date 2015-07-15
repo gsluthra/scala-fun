@@ -1,0 +1,2 @@
+#pattern  filter=crypt diff=crypt
+config/secret-key.txt  filter=crypt diff=crypt
